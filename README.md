@@ -11,7 +11,18 @@ Antes de ejecutar el proyecto hay que prepara las siguientes configuraciones:
     ELASTICSEARCH_USERNAME = "elastic"  # Reemplaza con tu nombre de usuario de Elasticsearch
     ELASTICSEARCH_PASSWORD = "VjcT4+K6O9FWc8lJO=hp"  # Reemplaza con tu contraseña de Elasticsearch
 
+Arrancar spider de instant-gaming:
+
   ```
+    scrapy crawl instant-gaming
+  ```
+    
+Arrancar spider de GOG:
+
+  ```
+    scrapy crawl gog  
+  ```
+  
 
 2. Elasticsearch
 - Elasticsearch no permite hacer correctamente el intercambio de recursos entre su base de datos y la web cuando realiza las peticiones, devolviendo un error de CORS (Cross-Origin Resource Sharing). Este error se puede solucionar de la siguiente manera:
