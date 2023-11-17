@@ -1,0 +1,306 @@
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+  }
+  
+  .search-bar input {
+    width: 300px;
+    padding: 10px;
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    margin: 0 5px; /* Espacio entre input y botón */
+
+  }
+  
+  .navbar {
+    background-color: #333; 
+    overflow: hidden; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    overflow: visible;
+    
+  
+  }
+
+  .navbar-content {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    width: 100%; 
+  }
+  
+  .navbar-text {
+    font-size: 1.5rem; 
+    color: white; 
+    
+  }
+  
+  #developers-btn {
+    font-size: 1rem; 
+    
+  }
+  
+  
+  .navbar a {
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd; 
+    color: black; 
+  }
+
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+    z-index: 1000; 
+
+  }
+  
+  .dropbtn {
+    background-color: #333; 
+    color: white; 
+    padding: 14px 16px; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  .dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: #f9f9f9; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+  }
+  
+  .dropdown-content a {
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;} 
+  
+  .dropdown:hover .dropdown-content {display: block;} 
+
+  
+  .filter-menu {
+    position: fixed;
+    top: 600px; 
+
+    left: 0;
+    top: 0;
+    width: 250px;
+    background-color: #f3f3f3;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  
+
+  .filter-btn {
+    background-color: #333; 
+    color: white; 
+    padding: 14px 16px; 
+    border: none; 
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; 
+  }
+  
+  .filter-btn:hover {
+    background-color: #ddd; 
+    color: black; 
+  }
+  
+  .page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+  }
+   
+
+
+
+  .item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .item img {
+    max-width: 100px; 
+    height: auto;
+  }
+  
+
+  .game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px; 
+
+  }
+  
+  .game-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .game-item img {
+    max-width: 100%; 
+    height: auto;
+  }
+  
+
+  .slider-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input[type="range"] {
+    z-index: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    z-index: 2;
+}
+
+.slider-container:hover .tooltip {
+    display: block;
+}
+
+.next-button, .previous-button {
+  flex: 1; 
+  padding: 10px; 
+  margin: 5px; 
+  
+}
+
+.game-link {
+  color: inherit;
+  text-decoration: none; 
+}
+
+.game-link:hover {
+  text-decoration: underline; 
+}
+
+
+
+.date-range-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.date-range-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.date-range-container input[type="date"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: calc(100% - 16px);
+}
+.date-range-container button {
+  padding: 8px 15px;
+  background-color: var(--pill-accent);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.date-range-container button:hover {
+  background-color: var(--bright-blue);
+}
+@media screen and (max-width: 650px) {
+  .date-range-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .date-range-container label, 
+  .date-range-container input[type="date"] {
+    width: 45%;
+  }
+}
+
+.sort-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.sort-container label {
+  font-weight: bold;
+  color: #333;
+}
+
+.sort-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: calc(100% - 16px);
+  background-color: white;
+  cursor: pointer;
+}
+
+.sort-container select:hover,
+.sort-container select:focus {
+  border-color: var(--bright-blue);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
