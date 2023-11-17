@@ -44,11 +44,15 @@ Se ha realizado utilizando el framework "Angular", por lo que hay que tener inst
 
  - Instalación de Angular:
 
-    `npm install -g @angular/cli`
+```
+npm install -g @angular/cli
+```
 
  - Levantar la web:
 
-    `ng serve --open`
+```
+ng serve --open
+```
   
  - Dentro del fichero `/scrapperweb/scrapperweb/src/app/app.component.ts` es necesario especificar, en la parte de "Authorization", el usuario y contraseña de tu servidor de Elasticsearch ("usuario:contraseña"), para poder realizar las peticiones.
 
